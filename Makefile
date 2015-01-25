@@ -4,7 +4,7 @@ AUX = demo.aux
 TEXC := xelatex
 TEXC_OPTS += -shell-escape
 TEXMFHOME = $(shell kpsewhich -var-value=TEXMFHOME)
-INSTALL_DIR = $(TEXMFHOME)/tex/latex/mtheme
+INSTALL_DIR = $(TEXMFHOME)/tex/latex/beautybeamer
 
 .PHONY: clean install
 
