@@ -153,15 +153,14 @@
 
 \newcommand{\insertsectionHEAD}{%
   \expandafter\insertsectionHEADaux\insertsectionhead}
-  \newcommand{\insertsectionHEADaux}[3]{\textsc{\MakeLowercase{#3}}
-}
+  \newcommand{\insertsectionHEADaux}[3]{\textsc{#3}}
 
 \newcommand{\plain}[2][]{%
   \begingroup
   \setbeamercolor{background canvas}{bg=beautyBlue}
   \begin{frame}{#1}
     \centering
-    \vfill\vspace{1em}\usebeamerfont{section title}\textcolor{white}{\scshape #2}\vfill
+    \vfill\vspace{1em}\usebeamerfont{section title}\textcolor{white}{#2}\vfill
   \end{frame}
   \endgroup
 }
